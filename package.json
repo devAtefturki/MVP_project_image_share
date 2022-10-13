@@ -1,0 +1,19 @@
+{
+  "name": "mvp_project_image_share",
+  "version": "1.0.0",
+  "description": "a platform to uplad your images for the world to see",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devAtefturki/MVP_project_image_share.git"
+  },
+  "author": "devAtefturki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devAtefturki/MVP_project_image_share/issues"
+  },
+  "homepage": "https://github.com/devAtefturki/MVP_project_image_share#readme"
+}
