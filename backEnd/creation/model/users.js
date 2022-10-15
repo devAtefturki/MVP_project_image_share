@@ -2,6 +2,8 @@ const mongoose=require('mongoose');
 var userSchema=new mongoose.Schema({
     username:String,
     password:String,
-    respectivePostsIds:[Number]
+    respectivePostsIds:[String]
 });
-module.exports=new mongoose.model('user',userSchema)
+const User=new mongoose.model('user',userSchema)
+
+module.exports=User

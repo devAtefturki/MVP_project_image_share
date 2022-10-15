@@ -14,7 +14,7 @@ module.exports={
         return res.status(201).json({
             success:true,
             message:'new loginTable created',
-            loginTable:newloginTable
+            loginTable:newLoginTable
         });
     })
     .catch((error)=>{

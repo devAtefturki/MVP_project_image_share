@@ -5,12 +5,10 @@ var imageSchema= new mongoose.Schema({
     required:true,
 },
     description:String,
-    img:{
-        data:Buffer,
-        connectType:String
-    }
+    img:String  //it's going to be a source link instead of buffer
     
 
 
 });
-module.exports=new mongoose.model('image',imageSchema)
+const image=new mongoose.model('image',imageSchema)
+module.exports=image

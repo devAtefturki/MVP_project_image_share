@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/devAtefturki/MVP_project_image_share/issues"
   },
-  "homepage": "https://github.com/devAtefturki/MVP_project_image_share#readme"
+  "homepage": "https://github.com/devAtefturki/MVP_project_image_share#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  }
 }

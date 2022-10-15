@@ -1,22 +1,21 @@
 const router = require('express').Router();
 let User = require('../model/users.js');
 
-router.route('/:id').get((req, res) => {
-  User.findById(req.params.id)
+router.route('/').get((req, res) => {
+  User.find()
     .then(users => res.json(users))
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
-
-router.route('/update').put((req, res) => {
+router.route('/add').post((req, res) => {
   const username = req.body.username;
   const password =req.body.password;
-  const respectivePosts=req.body.respectivePosts
+  const respectivePosts=req.body.respectivePosts;
 
-  const updatedUser = new User({username,password,respectivePosts});
+  const newUser = new User({username,password,respectivePosts});
 
-  updatedUser.save()
-    .then(() => res.json('User updated!'))
+  newUser.save()
+    .then(() => res.json('User added!'))
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
